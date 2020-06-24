@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+
+</head>
+<body>
+        <nav class = "navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href = "#"> Random Password Generator</a>
+        </nav>
+
+        <div class = "container">
+    
+            <div class = "row">
+
+                <div class = "col-lg-8 col-sm-12 mx-auto">
+
+                    <div class = "middle">
+                        <h3>Generate a Password</h3>
+                        <br>
+                        <input type = "text" id = "textbox">
+                        <br>
+                        <input type = "range" min = "8" max = "128" name = "slider" id ="slider">
+                        <br>
+                        <button onclick="generatePW()">Generate password</button>
+                        <button onclick="copyPassword()">Copy to Clipboard</button>
+                        <div id = "length"></div>
+                    </div>
+
+                    <div class = "passwords_generated">
+                        <b>Passwords generated</b>
+                        <br>
+                        <div id = "lastPW"></div>
+                    </div>
+
+
+                </div>
+            </div>
+                
+        </div>
+        <script src="./Assets/js/script.js"></script>
+
+</body>
+</html>
+
